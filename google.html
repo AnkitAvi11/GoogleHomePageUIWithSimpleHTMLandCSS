@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google | India</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="https://github.com/AnkitAvi11/GoogleHomePageUIWithSimpleHTMLandCSS/blob/master/google.png?raw=true">
+        <style>
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color: black;
+                color: grey;
+                font-family: dosis;
+            }
+            li{
+                float:left;
+                padding: 10px 15px;
+                cursor: pointer;
+                transition: .5s;
+            }
+            ul li:hover{
+                color: white;
+            }
+            .active{
+                color: white;
+            }
+            .container{
+                padding:100px;
+            }
+            input[type="text"]{
+                border-radius: 2px;
+                border: 1px solid lightgrey;
+                padding: 8px;
+                font-size: 18px;
+                font-family: dosis;
+                box-sizing: border-box;
+                box-shadow: 0px 1px 2px lightgrey;
+                transition: 1s;
+            }
+            input[type="text"]:hover, input[type="text"]:focus{
+                box-shadow: -2px 2px 6px lightgrey;
+            }
+            .button{
+                background-color:#eceff1;
+                border:none;
+                padding: 8px 30px;
+                color: grey;
+                font-size: 17px;
+                font-family: calibri;
+                border-radius: 3px;
+            }
+            .button:hover{
+                background-color: #cfd8dc;
+                border: none;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li class="active">Web</li>
+            <li>Images</li>
+            <li>Videos</li>
+            <li>Maps</li>
+            <li>News</li>
+            <li>Shopping</li>
+            <li>Gmail</li>
+            <li>more</li>
+            <li style="float:right">Signup</li>
+            <li style="float:right">Login</li>
+        </ul>
+        <div class="container">
+            <center><img src="google.png">
+            <br/><br/>
+            <input type="text" style="width:50%">
+            <br/><br/>
+            <button class="button">Search</button>&nbsp;&nbsp;&nbsp;<button class="button">I'm feeling lucky</button>
+            </center>
+        </div>
+    </body>
+</html>
